@@ -41,7 +41,7 @@ const videoUrls = [
   },
   {
     url: require('./videos/video4.mp4'),
-    profilePic: 'https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/4bda52cf3ad31c728153859262c329db~c5_100x100.jpeg?x-expires=1688486400&x-signature=ssUbbCpZFJj6uj33D%2BgtcqxMvgQ%3D',
+    profilePic: 'https://external-preview.redd.it/_ysVY46s4W2COAnR769iuSMM-bTPFrhH_YmJS2WeDnw.jpg?auto=webp&s=ab4dad2ccf5caf76fa1f8107e6a727295862ec45',
     username: 'faruktutkus',
     description: 'Wait for the end | Im RTX 4090 TI | #softwareengineer #softwareengineer #coding #codinglife #codingmemes ',
     song: 'orijinal ses - Computer Science',
