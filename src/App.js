@@ -8,7 +8,7 @@ import TopNavbar from './components/TopNavbar';
 const videoUrls = [
   {
     url: require('./videos/video1.mp4'),
-    profilePic: 'https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-giso/9d429ac49d6d18de6ebd2a3fb1f39269~c5_100x100.jpeg?x-expires=1688479200&x-signature=pjH5pwSS8Sg1dJqbB1GdCLXH6ew%3D',
+    profilePic: 'https://ugc.production.linktr.ee/dJvH0sddQmuSAPopqmcZ_A28U5NIyz26M5uen',
     username: 'csjackie',
     description: 'Lol nvm #compsci #chatgpt #ai #openai #techtok',
     song: 'Original sound - Famed Flames',
@@ -19,7 +19,7 @@ const videoUrls = [
   },
   {
     url: require('./videos/video2.mp4'),
-    profilePic: 'https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/eace3ee69abac57c39178451800db9d5~c5_100x100.jpeg?x-expires=1688479200&x-signature=wAkVmwL7lej15%2B16ypSWQOqTP8s%3D',
+    profilePic: 'https://avatars.githubusercontent.com/u/41463883?s=200&v=4',
     username: 'dailydotdev',
     description: 'Every developer brain @francesco.ciulla #developerjokes #programming #programminghumor #programmingmemes',
     song: 'tarawarolin wants you to know this isnt my sound - Chaplain J Rob',
@@ -30,7 +30,7 @@ const videoUrls = [
   },
   {
     url: require('./videos/video3.mp4'),
-    profilePic: 'https://p77-sign-va.tiktokcdn.com/tos-maliva-avt-0068/4e6698b235eadcd5d989a665704daf68~c5_100x100.jpeg?x-expires=1688479200&x-signature=wkwHDKfNuIDqIVHNm29%2FRf40R3w%3D',
+    profilePic: 'https://steamuserimages-a.akamaihd.net/ugc/1798648461453470649/AB683319B0F941C1726E5FEC077A1B50CED0F4B1/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false',
     username: 'wojciechtrefon',
     description: '#programming #softwareengineer #vscode #programmerhumor #programmingmemes',
     song: 'help so many people are using my sound - Ezra',
