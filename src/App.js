@@ -53,7 +53,7 @@ function App() {
   const itemDetailsRef = useRef(null);
   const [storefrontImages, setStorefrontImages] = useState([]);
   function get_storefront_images () {
-    axios.get('http://localhost:5000/get-user-storefront-images?user_id=1')
+    axios.get('http://127.0.0.1:5000/get-user-storefront-images?user_id=1')
       .then(function (response) {
         // Access the storefront images from the response
         const images = response.data.storefront_images;
