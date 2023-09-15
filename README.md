@@ -37,7 +37,7 @@ To use this TikTok: Future X Past, follow these steps:
 5. Open your browser and navigate to `http://localhost:3000` to access the app.
 
 ## Demo
-A live demo of the TikTok: Future X Past is available [here]([https://tik-tok-ui-clone-shemmee.vercel.app](https://tik-tok-ui-clone-iota.vercel.app)).
+A live demo of the TikTok: Future X Past is available [here](https://tik-tok-ui-clone-iota.vercel.app).
 
 ## Project Context
 The aim of this project was to innovate and enhance the shopping experience on TikTok. We identified a gap between the primary TikTok app and the TikTok Shop and sought to bridge it. Our solution introduces a themed Digital Storefront powered by TikTok's recommendation algorithm and Generative AI. This storefront tailors product recommendations based on a user's behavior on the TikTok For You Page (FYP) and their previous purchase habits. Additionally, we've added gamification elements, allowing users to unlock achievements and showcase them on their TikTok profiles.
