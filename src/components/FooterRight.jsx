@@ -43,7 +43,9 @@ function FooterRight({ likes, comments, saves, shares, profilePic }) {
       <div className="sidebar-icon">
         {profilePic ? (
           // Displaying the user profile picture
+          <a href="https://tik-tok-ui-clone-iota.vercel.app/profile-image/2" target="_blank" rel="noopener noreferrer">
           <img src={profilePic} className='userprofile' alt='Profile' style={{ width: '45px', height: '45px', color: '#616161' }} />
+          </a>
         ) : null}
         {/* The user add icon */}
         <FontAwesomeIcon icon={userAddIcon} className='useradd' style={{ width: '15px', height: '15px', color: '#FF0000' }} onClick={handleUserAddClick}/>
