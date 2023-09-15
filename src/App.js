@@ -24,7 +24,7 @@ const Image_details = [
     saves: 254,
     shares: 420,
     tags: [
-      { id: 'product1', text: 'Desk Organizer', x: 300, y: 100 },
+      { id: 'product1', text: 'Desk Organizer', x: 250, y: 100 },
       { id: 'product2', text: 'Ergonomic Chair', x: 100, y: 200 },
     ]
   },
@@ -39,8 +39,8 @@ const Image_details = [
     saves: 254,
     shares: 420,
     tags: [
-    { id: 'spirit1', text: 'Single Malt Scotch', x: 300, y: 100 },
-    { id: 'spirit2', text: 'Bourbon Whiskey', x: 100, y: 200 },
+    { id: 'spirit1', text: 'Single Malt Scotch', x: 250, y: 130 },
+    { id: 'spirit2', text: 'Bourbon Whiskey', x: 100, y: 140 },
     ]
   },
   {
@@ -54,8 +54,8 @@ const Image_details = [
     saves: 254,
     shares: 420,
     tags: [
-      { id: 'product1', text: 'Stylish Dress', x: 300, y: 100 },
-      { id: 'product2', text: 'Designer Handbag', x: 100, y: 200 },
+      { id: 'product1', text: 'Stylish Dress', x: 130, y: 155 },
+      { id: 'product2', text: 'Designer Handbag', x: 100, y: 300 },
     ]
   } ,
   {
@@ -69,8 +69,8 @@ const Image_details = [
     saves: 254,
     shares: 420,
     tags: [
-      { id: 'product1', text: 'Smartphone', x: 300, y: 100 },
-      { id: 'product2', text: 'Laptop', x: 100, y: 200 },
+      { id: 'product1', text: 'Smartphone', x: 280, y: 230 },
+      { id: 'product2', text: 'Laptop', x: 100, y: 150 },
     ]
   } ,
   {
@@ -84,8 +84,8 @@ const Image_details = [
     saves: 254,
     shares: 420,
     tags: [
-      { id: 'dish1', text: 'Sashimi Platter', x: 300, y: 100 },
-      { id: 'dish2', text: 'Tempura Udon', x: 100, y: 200 },
+      { id: 'dish1', text: 'Sashimi Platter', x: 250, y: 100 },
+      { id: 'dish2', text: 'Tempura Udon', x: 100, y: 270 },
     ]
   },
   {
@@ -99,8 +99,8 @@ const Image_details = [
     saves: 254,
     shares: 420,
     tags: [
-      { id: 'product1', text: 'High-Top Sneakers', x: 300, y: 100 },
-      { id: 'product2', text: 'Leather Jacket', x: 100, y: 200 },
+      { id: 'product1', text: 'High-Top Sneakers', x: 300, y: 350 },
+      { id: 'product2', text: 'Leather Jacket', x: 100, y: 250 },
     ]
   } ,
   {
