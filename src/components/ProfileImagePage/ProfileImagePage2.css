@@ -5,7 +5,7 @@
     align-items: center;
     width: 375px;
     overflow: hidden;
-    z-index: 10;
+    z-index: 1000;
 }
 
 .full-profile-image {
