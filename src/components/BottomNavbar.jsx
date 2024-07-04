@@ -6,7 +6,7 @@ import { faHouse, faUserFriends, faPlus, faInbox, fa7, faUser } from '@fortaweso
 function BottomNavbar() {
   return (
     <div className="bottom-navbar">
-      <a href="https://tik-tok-ui-clone-git-for-you-jordanleewei.vercel.app" className="nav-item">
+      <a className="nav-item">
         <FontAwesomeIcon icon={faHouse} className="icon active" />
         <span className="item-name active">Home</span>
       </a>
@@ -23,12 +23,10 @@ function BottomNavbar() {
         <FontAwesomeIcon icon={faInbox} className="icon" />
         <span className="item-name">Inbox</span>
       </div>
-      <a href="https://tik-tok-ui-clone-iota.vercel.app/profile-image">
-        <div className="nav-item">
-          <FontAwesomeIcon icon={faUser} className="icon" />
-          <span className="item-name">Profile</span>
-        </div>
-      </a>
+      <div className="nav-item">
+        <FontAwesomeIcon icon={faUser} className="icon" />
+        <span className="item-name">Profile</span>
+      </div>
 
     </div>
   );
