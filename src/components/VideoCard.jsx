@@ -8,7 +8,9 @@ const VideoCard = (props) => {
   const videoRef = useRef(null);
   const audioRef = useRef(null);
   const [longPress, setLongPress] = useState(false);
+  const [accessibilityMode, setAccessibilityMode] = useState(false);
   const longPressTimeout = useRef(null);
+  const isLongPressActive = useRef(false);
 
   useEffect(() => {
     if (autoplay) {
@@ -25,6 +27,8 @@ const VideoCard = (props) => {
   };
 
   const handleLongPressStart = () => {
+    console.log('Long press start');
+    isLongPressActive.current = true;
     longPressTimeout.current = setTimeout(() => {
       setLongPress(true);
       handleLongPressAction();
@@ -32,35 +36,48 @@ const VideoCard = (props) => {
   };
 
   const handleLongPressEnd = () => {
+    console.log('Long press end');
     clearTimeout(longPressTimeout.current);
-    if (!longPress) {
-      onVideoPress();
-    } else {
-      // Pause the audio when the long press ends
-      if (audioRef.current) {
-        audioRef.current.pause();
+    if (isLongPressActive.current) {
+      if (longPress) {
+        // Pause the audio when the long press ends
+        if (audioRef.current) {
+          console.log('Pausing audio');
+          audioRef.current.pause();
+        }
+        setAccessibilityMode(false);
+        setLongPress(false);
+      } else {
+        onVideoPress();
       }
     }
-    setLongPress(false);
+    isLongPressActive.current = false;
   };
 
   const handleLongPressAction = () => {
     // Play audio on long press
+    console.log('Playing audio');
     if (audioRef.current) {
       audioRef.current.play();
+      setAccessibilityMode(true);
     }
   };
 
   return (
     <div className="video">
-      {/* The video element */}
-      <video
-        className="player"
+      {/* Transparent overlay on the left edge */}
+      <div
+        className="left-edge-overlay"
         onMouseDown={handleLongPressStart}
         onTouchStart={handleLongPressStart}
         onMouseUp={handleLongPressEnd}
         onMouseLeave={handleLongPressEnd}
         onTouchEnd={handleLongPressEnd}
+      ></div>
+      {/* The video element */}
+      <video
+        className="player"
+        onClick={onVideoPress}
         ref={(ref) => {
           videoRef.current = ref;
           setVideoRef(ref);
@@ -69,6 +86,11 @@ const VideoCard = (props) => {
         src={url}
         muted
       ></video>
+      {accessibilityMode && (
+        <div className="accessibility-mode">
+          Accessibility Mode
+        </div>
+      )}
       <div className="bottom-controls">
         <div className="footer-left">
           {/* The left part of the container */}
