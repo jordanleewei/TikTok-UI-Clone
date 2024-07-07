@@ -2,11 +2,10 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faUserFriends, faPlus, faInbox, fa7, faUser } from '@fortawesome/free-solid-svg-icons';
 
-
 function BottomNavbar() {
   return (
     <div className="bottom-navbar">
-      <a className="nav-item">
+      <a className="nav-item" href="/">
         <FontAwesomeIcon icon={faHouse} className="icon active" />
         <span className="item-name active">Home</span>
       </a>
@@ -14,10 +13,10 @@ function BottomNavbar() {
         <FontAwesomeIcon icon={faUserFriends} className="icon" />
         <span className="item-name">Friends</span>
       </div>
-      <div className="nav-item">
+      <a className="nav-item" href="https://fxpcreatorui-f78434ad4dd7.herokuapp.com/" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faPlus} className="icon plus" />
         <span className="item-name">Create</span>
-      </div>
+      </a>
       <div className="nav-item">
         <FontAwesomeIcon icon={fa7} className="notification" />
         <FontAwesomeIcon icon={faInbox} className="icon" />
@@ -27,7 +26,6 @@ function BottomNavbar() {
         <FontAwesomeIcon icon={faUser} className="icon" />
         <span className="item-name">Profile</span>
       </div>
-
     </div>
   );
 }
