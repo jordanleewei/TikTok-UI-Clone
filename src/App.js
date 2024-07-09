@@ -5,6 +5,7 @@ import './tailwind.css';
 import VideoCard from './components/VideoCard';
 import BottomNavbar from './components/BottomNavbar';
 import TopNavbar from './components/TopNavbar';
+import Loading from './components/Loading';
 
 const initialVideoData = [
   {
@@ -59,6 +60,7 @@ const initialVideoData = [
 
 function App() {
   const [videos, setVideos] = useState([]);
+  const [loading, setLoading] = useState(true);
   const videoRefs = useRef([]);
 
   useEffect(() => {
@@ -79,6 +81,8 @@ function App() {
         setVideos(videosWithDetails);
       } catch (error) {
         console.error('Error fetching videos:', error);
+      } finally {
+        setLoading(false);
       }
     };
 
@@ -122,27 +126,31 @@ function App() {
 
   return (
     <div className="app">
-      <div className="container">
-        <TopNavbar className="top-navbar" />
-        {videos.map((video, index) => (
-          <VideoCard
-            key={index}
-            username={video.username}
-            description={video.description}
-            song={video.song}
-            likes={video.likes}
-            saves={video.saves}
-            comments={video.comments}
-            shares={video.shares}
-            url={video.url}
-            profilePic={video.profilePic}
-            setVideoRef={handleVideoRef(index)}
-            autoplay={index === 0}
-            longPressAudioUrl={video.longPressAudioUrl} // Pass audio URL here
-          />
-        ))}
-        <BottomNavbar className="bottom-navbar" />
-      </div>
+      {loading ? (
+        <Loading />
+      ) : (
+        <div className="container">
+          <TopNavbar className="top-navbar" />
+          {videos.map((video, index) => (
+            <VideoCard
+              key={index}
+              username={video.username}
+              description={video.description}
+              song={video.song}
+              likes={video.likes}
+              saves={video.saves}
+              comments={video.comments}
+              shares={video.shares}
+              url={video.url}
+              profilePic={video.profilePic}
+              setVideoRef={handleVideoRef(index)}
+              autoplay={index === 0}
+              longPressAudioUrl={video.longPressAudioUrl} // Pass audio URL here
+            />
+          ))}
+          <BottomNavbar className="bottom-navbar" />
+        </div>
+      )}
     </div>
   );
 }
